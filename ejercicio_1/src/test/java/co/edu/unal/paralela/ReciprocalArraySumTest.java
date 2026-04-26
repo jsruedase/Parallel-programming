@@ -112,6 +112,7 @@ public class ReciprocalArraySumTest extends TestCase {
         final String errMsg = String.format("Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse " +
                 " %fx veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) %fx veces", minimalExpectedSpeedup, speedup);
         assertTrue(errMsg, speedup >= minimalExpectedSpeedup);
+        //System.out.println(String.format("Speedup para parArraySum con N = 2_000_000: %fx", speedup));
     }
 
     /**
@@ -123,6 +124,7 @@ public class ReciprocalArraySumTest extends TestCase {
         final String errMsg = String.format("Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse " +
                 "%fx veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) %fx veces", minimalExpectedSpeedup, speedup);
         assertTrue(errMsg, speedup >= minimalExpectedSpeedup);
+        //System.out.println(String.format("Speedup para parArraySum con N = 200_000_000: %fx", speedup));
     }
 
     /**
@@ -135,6 +137,7 @@ public class ReciprocalArraySumTest extends TestCase {
         final String errMsg = String.format("Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse " +
                 "%fx veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) %fx veces", minimalExpectedSpeedup, speedup);
         assertTrue(errMsg, speedup >= minimalExpectedSpeedup);
+        //System.out.println(String.format("Speedup para parManyTaskArraySum con N = 2_000_000 y numTasks = %d: %fx", ncores, speedup));
     }
 
     /**
@@ -147,5 +150,7 @@ public class ReciprocalArraySumTest extends TestCase {
         final String errMsg = String.format("Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse " +
                 " %fx veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) %fx veces", minimalExpectedSpeedup, speedup);
         assertTrue(errMsg, speedup >= minimalExpectedSpeedup);
+        //System.out.println(String.format("Speedup para parManyTaskArraySum con N = 200_000_000 y numTasks = %d: %fx", ncores, speedup));
+
     }
 }
