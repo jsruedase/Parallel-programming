@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: co.edu.unal.paralela.StudentAnalyticsTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.99 sec <<< FAILURE! - in co.edu.unal.paralela.StudentAnalyticsTest
+testMostCommonFirstNameOfInactiveStudents(co.edu.unal.paralela.StudentAnalyticsTest)  Time elapsed: 0.287 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at co.edu.unal.paralela.StudentAnalytics.mostCommonFirstNameOfInactiveStudentsParallelStream(StudentAnalytics.java:107)
+	at co.edu.unal.paralela.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:91)
+	at co.edu.unal.paralela.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents(StudentAnalyticsTest.java:107)
+
+testCountNumberOfFailedStudentsOlderThan20(co.edu.unal.paralela.StudentAnalyticsTest)  Time elapsed: 0.161 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at co.edu.unal.paralela.StudentAnalytics.countNumberOfFailedStudentsOlderThan20ParallelStream(StudentAnalytics.java:142)
+	at co.edu.unal.paralela.StudentAnalyticsTest.countNumberOfFailedStudentsOlderThan20Helper(StudentAnalyticsTest.java:134)
+	at co.edu.unal.paralela.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20(StudentAnalyticsTest.java:150)
+
+testCountNumberOfFailedStudentsOlderThan20Perf(co.edu.unal.paralela.StudentAnalyticsTest)  Time elapsed: 0.244 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at co.edu.unal.paralela.StudentAnalytics.countNumberOfFailedStudentsOlderThan20ParallelStream(StudentAnalytics.java:142)
+	at co.edu.unal.paralela.StudentAnalyticsTest.countNumberOfFailedStudentsOlderThan20Helper(StudentAnalyticsTest.java:134)
+	at co.edu.unal.paralela.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf(StudentAnalyticsTest.java:158)
+
+testMostCommonFirstNameOfInactiveStudentsPerf(co.edu.unal.paralela.StudentAnalyticsTest)  Time elapsed: 0.669 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at co.edu.unal.paralela.StudentAnalytics.mostCommonFirstNameOfInactiveStudentsParallelStream(StudentAnalytics.java:107)
+	at co.edu.unal.paralela.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:91)
+	at co.edu.unal.paralela.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf(StudentAnalyticsTest.java:115)
+

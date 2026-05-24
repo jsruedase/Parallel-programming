@@ -2,10 +2,11 @@ package co.edu.unal.paralela;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.stream.DoubleStream;
 import java.util.stream.Stream;
-
 /**
  * Una clase 'envoltorio' (wrapper) para varios métodos analíticos.
  */
@@ -45,7 +46,12 @@ public final class StudentAnalytics {
      */
     public double averageAgeOfEnrolledStudentsParallelStream(
             final Student[] studentArray) {
-        throw new UnsupportedOperationException();
+        Stream<Student> stream = Arrays.stream(studentArray).parallel();
+        Stream<Student> enrolled_stream = stream.filter(s -> s.checkIsCurrent());
+        //int num_students = enrolled_stream.count();
+        DoubleStream age_stream = enrolled_stream.mapToDouble(s -> s.getAge());
+        double result = age_stream.average().getAsDouble();
+        return result;
     }
 
     /**
@@ -98,7 +104,11 @@ public final class StudentAnalytics {
      */
     public String mostCommonFirstNameOfInactiveStudentsParallelStream(
             final Student[] studentArray) {
-        throw new UnsupportedOperationException();
+        Stream<Student> stream = Arrays.stream(studentArray).parallel();
+        Stream<Student> enrolled_stream = stream.filter(s -> !s.checkIsCurrent());
+        DoubleStream age_stream = enrolled_stream.mapto(s -> s.getAge());
+        double result = age_stream.average().getAsDouble();
+        return result;
     }
 
     /**
