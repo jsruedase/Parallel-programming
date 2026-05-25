@@ -1,94 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.edu.unal.paralela.StudentAnalyticsTest" time="1.97" tests="6" errors="4" skipped="0" failures="0">
+<testsuite name="co.edu.unal.paralela.StudentAnalyticsTest" time="2.362" tests="6" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="java.vm.version" value="21.0.1+12-LTS-29"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\\Users\\juans\\OneDrive\\Documents\\Paralela\\Parallel-programming\\ejercicio_2"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.9+9"/>
+    <property name="sun.boot.library.path" value="C:\Users\User\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\User\Documents\Paralela\Parallel-programming\ejercicio_2"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="path.separator" value=";"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="MX"/>
+    <property name="user.country" value="CO"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\juans\OneDrive\Documents\Paralela\Parallel-programming\ejercicio_2"/>
-    <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="java.runtime.version" value="21.0.1+12-LTS-29"/>
+    <property name="user.dir" value="C:\Users\User\Documents\Paralela\Parallel-programming\ejercicio_2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.9+9"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\juans\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\User\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
-    <property name="stderr.encoding" value="cp437"/>
-    <property name="os.name" value="Windows 11"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="guice_custom_class_loading" value="CHILD"/>
-    <property name="classworlds.conf" value="C:\\Users\\juans\\Downloads\\apache-maven-3.9.14-bin\\apache-maven-3.9.14\\bin\\m2.conf"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.9.14\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="stdout.encoding" value="cp437"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\juans\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\juans\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Rockwell Software\RSCommon;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\juans\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Vagrant\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\juans\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\juans\AppData\Local\Programs\Python\Python311\;C:\Users\juans\AppData\Local\Microsoft\WindowsApps;C:\Users\juans\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\juans\AppData\Local\reflex\bun\bin;C:\Users\juans\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\juans\AppData\Roaming\npm;C:\Users\juans\AppData\Local\Microsoft\WinGet\Links;C:\Users\juans\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1\bin;C:\Users\juans\Downloads\apache-maven-3.9.14-bin\apache-maven-3.9.14\bin;c:\Users\juans\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
-    <property name="maven.conf" value="C:\\Users\\juans\\Downloads\\apache-maven-3.9.14-bin\\apache-maven-3.9.14/conf"/>
+    <property name="java.library.path" value="C:\Users\User\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\User\AppData\Local\cloud-code\installer\google-cloud-sdk\bin;c:\Users\User\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\User\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Python314\Scripts\;C:\Python314\;C:\Python313\Scripts\;C:\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Program Files\Go\bin;C:\Program Files (x86)\dotnet\;C:\Users\User\AppData\Local\nvm;C:\ProgramData\chocolatey\bin;F:\Windows Performance Toolkit\;C:\mingw2\ucrt64\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\User\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Users\User\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python311\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;C:\Users\User\go\bin;C:\Users\User\AppData\Local\reflex\bun\bin;C:\Users\User\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Users\User\AppData\Local\Microsoft\WinGet\Links;C:\mingw2\ucrt64\bin;C:\Users\User\AppData\Local\Programs\Julia-1.11.6\bin;C:\apache-maven-3.9.14\bin;C:\Users\User\AppData\Roaming\npm;c:\Users\User\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;c:\Users\User\.vscode\extensions\ms-python.debugpy-2026.6.0-win32-x64\bundled\scripts\noConfigScripts;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.9.14/conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\\Users\\juans\\Downloads\\apache-maven-3.9.14-bin\\apache-maven-3.9.14\\lib\\jansi-native"/>
-    <property name="user.home" value="C:\Users\juans"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.9.14\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\User"/>
     <property name="user.timezone" value="America/Bogota"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="java.specification.version" value="21"/>
-    <property name="user.name" value="juans"/>
-    <property name="java.class.path" value="C:\\Users\\juans\\Downloads\\apache-maven-3.9.14-bin\\apache-maven-3.9.14\\boot\\plexus-classworlds-2.9.0.jar"/>
-    <property name="java.vm.specification.version" value="21"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="User"/>
+    <property name="java.class.path" value="C:\apache-maven-3.9.14\boot\plexus-classworlds-2.9.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="java.home" value="C:\Users\User\AppData\Local\Programs\Eclipse Adoptium\jdk-17.0.9.9-hotspot"/>
     <property name="user.language" value="es"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="21.0.1"/>
+    <property name="java.version" value="17.0.9"/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Users\juans\Downloads\apache-maven-3.9.14-bin\apache-maven-3.9.14"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.stderr.encoding" value="cp850"/>
+    <property name="maven.home" value="C:\apache-maven-3.9.14"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2023-10-17"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Temurin-17.0.9+9"/>
+    <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testAverageAgeOfEnrolledStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.329"/>
-  <testcase name="testMostCommonFirstNameOfInactiveStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.287">
-    <error type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
-	at co.edu.unal.paralela.StudentAnalytics.mostCommonFirstNameOfInactiveStudentsParallelStream(StudentAnalytics.java:107)
-	at co.edu.unal.paralela.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:91)
-	at co.edu.unal.paralela.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents(StudentAnalyticsTest.java:107)
-</error>
-  </testcase>
-  <testcase name="testCountNumberOfFailedStudentsOlderThan20" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.161">
-    <error type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
-	at co.edu.unal.paralela.StudentAnalytics.countNumberOfFailedStudentsOlderThan20ParallelStream(StudentAnalytics.java:142)
-	at co.edu.unal.paralela.StudentAnalyticsTest.countNumberOfFailedStudentsOlderThan20Helper(StudentAnalyticsTest.java:134)
-	at co.edu.unal.paralela.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20(StudentAnalyticsTest.java:150)
-</error>
-  </testcase>
-  <testcase name="testAverageAgeOfEnrolledStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.28"/>
-  <testcase name="testCountNumberOfFailedStudentsOlderThan20Perf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.244">
-    <error type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
-	at co.edu.unal.paralela.StudentAnalytics.countNumberOfFailedStudentsOlderThan20ParallelStream(StudentAnalytics.java:142)
-	at co.edu.unal.paralela.StudentAnalyticsTest.countNumberOfFailedStudentsOlderThan20Helper(StudentAnalyticsTest.java:134)
-	at co.edu.unal.paralela.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf(StudentAnalyticsTest.java:158)
-</error>
-  </testcase>
-  <testcase name="testMostCommonFirstNameOfInactiveStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.669">
-    <error type="java.lang.UnsupportedOperationException">java.lang.UnsupportedOperationException
-	at co.edu.unal.paralela.StudentAnalytics.mostCommonFirstNameOfInactiveStudentsParallelStream(StudentAnalytics.java:107)
-	at co.edu.unal.paralela.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:91)
-	at co.edu.unal.paralela.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf(StudentAnalyticsTest.java:115)
-</error>
-  </testcase>
+  <testcase name="testCountNumberOfFailedStudentsOlderThan20Perf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.358"/>
+  <testcase name="testAverageAgeOfEnrolledStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.388"/>
+  <testcase name="testMostCommonFirstNameOfInactiveStudentsPerf" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="1.068"/>
+  <testcase name="testCountNumberOfFailedStudentsOlderThan20" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.131"/>
+  <testcase name="testMostCommonFirstNameOfInactiveStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.281"/>
+  <testcase name="testAverageAgeOfEnrolledStudents" classname="co.edu.unal.paralela.StudentAnalyticsTest" time="0.136"/>
 </testsuite>
