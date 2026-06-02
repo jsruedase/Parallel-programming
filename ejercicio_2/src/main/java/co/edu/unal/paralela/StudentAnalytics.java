@@ -5,13 +5,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.HashMap;
-import java.util.stream.DoubleStream;
 import java.util.stream.Stream;
 
 //Punto 2 
 import java.util.stream.Collectors;
 import java.util.function.Function;
 import java.util.Comparator;
+
 /**
  * Una clase 'envoltorio' (wrapper) para varios métodos analíticos.
  */
@@ -57,13 +57,17 @@ public final class StudentAnalytics {
         // .map(s -> new double[]{s.getAge(), 1.0})
         // .reduce( new double[]{0.0, 0.0}, (a, b) -> new double[]{a[0] + b[0], a[1] + b[1]});
         // return ans[0] / ans[1];
-        Stream<Student> stream = Arrays.stream(studentArray).parallel();
-        Stream<Student> enrolled_stream = stream.filter(s -> s.checkIsCurrent());
-        //int num_students = enrolled_stream.count();
-        DoubleStream age_stream = enrolled_stream.mapToDouble(s -> s.getAge());
-        double result = age_stream.average().getAsDouble();
+
+        // Stream<Student> stream = Arrays.stream(studentArray).parallel();
+        // Stream<Student> enrolled_stream = stream.filter(s -> s.checkIsCurrent());
+        // //int num_students = enrolled_stream.count();
+        // DoubleStream age_stream = enrolled_stream.mapToDouble(s -> s.getAge());
+        // double result = age_stream.average().getAsDouble();
         
-        return result;
+        return Arrays.stream(studentArray).parallel()
+        .filter(s -> s.checkIsCurrent())
+        .mapToDouble(s -> s.getAge())
+        .average().getAsDouble();
         
     }
 
@@ -117,10 +121,14 @@ public final class StudentAnalytics {
      */
     public String mostCommonFirstNameOfInactiveStudentsParallelStream(
             final Student[] studentArray) {
-        Stream<String> inactiveStudents = Arrays.stream(studentArray).parallel().filter(s -> !s.checkIsCurrent()).map(s-> s.getFirstName());
-        return inactiveStudents.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+
+        return Arrays.stream(studentArray).parallel()
+        .filter(s -> !s.checkIsCurrent())
+        .map(s-> s.getFirstName())
+        .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
         .entrySet()
         .stream()
+        .parallel()
         .max(Map.Entry.comparingByValue())
         .get()
         .getKey();
@@ -159,6 +167,8 @@ public final class StudentAnalytics {
      */
     public int countNumberOfFailedStudentsOlderThan20ParallelStream(
             final Student[] studentArray) {
-        return (int) Arrays.stream(studentArray).parallel().filter(s-> !s.checkIsCurrent()).filter(s-> s.getAge() > 20).filter(s->s.getGrade() < 65).count();
+        return (int) Arrays.stream(studentArray).parallel()
+        .filter(student -> (!student.checkIsCurrent() && student.getAge() > 20 && student.getGrade() < 65))
+        .count();
     }
 }
